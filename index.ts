@@ -16,6 +16,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+
 //Singleton////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Синглтон необходим тогда, когда в нашем коде есть необходимость создать что-то в единичном экземпляре
 // import { Sun } from "./src/singleton/Sun.js";
@@ -37,13 +38,31 @@
 
 // Factory////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Фабрика необходима тогда, когда нам нужно создавать объекты имеющие общий интерфейс, но 
-// отличающиеся чем либо незначительным
+// отличающиеся лишь значениями своих полей
 // import { DonutFactory } from "./src/factory/DonutFactory.js";
 // import { DonutType } from "./src/factory/enums.js";
 // console.log('Создаем пончик с шоколадом');
 // DonutFactory.getDonut(DonutType.chocolate);
 // console.log('Создаем пончик с ванилью');
 // DonutFactory.getDonut(DonutType.vanilla);
+
+
+// Prototype////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Этот паттерн помгает нам на основе прототипа объекта делать его копии, при необходимости меняя какие-либо поля, методы, параметры.
+// import { Edc, Phisique } from "./src/prototype/enums.js";
+// import { Man } from "./src/prototype/Man.js";
+// const idealManPrototype = new Man(190, 85, Edc.college, Phisique.high);//  Создаем прототип идеального мужчины
+// const weakMan = idealManPrototype.clone();
+// weakMan.power = Phisique.low; // Здесь мы на основе прототипа идеального мужчины создали тоже неплохого, но слабого.
+// console.log('This man is', weakMan.power);
+// const dumbMan = idealManPrototype.clone();
+// dumbMan.edc = Edc.school; // А здесь создадим слегка туповатого, вроде меня
+// console.log('This man has', dumbMan.edc, 'edc');
+
+
+
+
+
 
 
 

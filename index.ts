@@ -70,3 +70,18 @@
 //   .addWindows(WindowsBrand.rehau)
 //   .build();
 // console.log(apartmentWithWindowsRehau);
+
+// DECORATOR////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Декоратор помогает когда нам нужно расширить или усовершенствовать функционал методов экземпляров классов
+// import { CDecorator } from "./src/decorator/decorators/CDecorator.js";
+// import { JavaDecorator } from "./src/decorator/decorators/JavaDecorator.js";
+// import { SoftWareEngineer } from "./src/decorator/SoftWareEngineer.js";
+// let softWareEngineer = new SoftWareEngineer(); // Создаем инженера который не умеет ничего
+// softWareEngineer.writeCode();
+// softWareEngineer.codeReview();
+// softWareEngineer = new CDecorator(softWareEngineer); //Обучаем инженера языку С
+// softWareEngineer.writeCode();
+// softWareEngineer.codeReview();
+// softWareEngineer = new JavaDecorator(softWareEngineer); // Обучаем еще и java
+// softWareEngineer.writeCode();
+// softWareEngineer.codeReview();

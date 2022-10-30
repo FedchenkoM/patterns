@@ -85,3 +85,15 @@
 // softWareEngineer = new JavaDecorator(softWareEngineer); // Обучаем еще и java
 // softWareEngineer.writeCode();
 // softWareEngineer.codeReview();
+
+// ADAPTER////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Адаптер необходим когда нам нужно адаптировать метод одного обьекта для другого обьекта
+// import { AdapterAndroid } from "./src/adapter/AdapterAndroidCharge.js";
+// import { Android, IOSPhone } from "./src/adapter/enums.js";
+// import { IOS } from "./src/adapter/IphoneCharging.js";
+// const IOSCharge = new IOS(IOSPhone.iphoneX); // Создаем айфон зарядку
+// console.log(IOSCharge.charging()); //  Пользуемся айфон зарядкой
+// const AndroidCharge = new AdapterAndroid(IOSCharge, Android.xiaomi); // Подключаем к айфон зарядке адаптер на андройд
+// console.log(AndroidCharge.charging()); // Заряжаем андройд зарядкой для айфона через адаптер;
+
+

@@ -14,6 +14,7 @@
 // BritishPlayer.speak();
 // BritishPlayer.trainByProgram();
 
+
 // SINGLETON////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Синглтон необходим тогда, когда в нашем коде есть необходимость создать что-то в единичном экземпляре
 // import { Sun } from "./src/singleton/Sun.js";
@@ -95,5 +96,19 @@
 // console.log(IOSCharge.charging()); //  Пользуемся айфон зарядкой
 // const AndroidCharge = new AdapterAndroid(IOSCharge, Android.xiaomi); // Подключаем к айфон зарядке адаптер на андройд
 // console.log(AndroidCharge.charging()); // Заряжаем андройд зарядкой для айфона через адаптер;
+
+// ABSTRACT FACTORY////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Абстрактная фабрика некая надстройка над фабриками, которая позволяет управлять этими фабриками и помогает создавать однотипные объекты но с разным данными 
+// import { AvtoVAZ } from "./src/abstractFactory/AvtoVAZ.js";
+// const LadaOffRoadFactory = AvtoVAZ.offRoadFactory(); // Создаем фабрику внедорожников с помощью абстрактной фабрики
+// console.log(LadaOffRoadFactory.makeChevyNiva()); // Создаем внедорожник
+// console.log(LadaOffRoadFactory.makeNiva());
+// const LadaCityCarFactory = AvtoVAZ.cityCar(); // Создаем фабрику городсикх авто с помощью абстрактной фабрики
+// console.log(LadaCityCarFactory.makeGranta()); // Создаем городской авто
+// console.log(LadaCityCarFactory.makeVesta());
+// const LadaSportCarFactory = AvtoVAZ.sportCarFactory(); // Создаем фабрику спорткаров с помощью абстрактной фабрики
+// console.log(LadaSportCarFactory.makeLadaRevolution()); // Создаем спорткар
+
+
 
 

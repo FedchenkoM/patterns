@@ -14,7 +14,6 @@
 // BritishPlayer.speak();
 // BritishPlayer.trainByProgram();
 
-
 // SINGLETON////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Синглтон необходим тогда, когда в нашем коде есть необходимость создать что-то в единичном экземпляре
 // import { Sun } from "./src/singleton/Sun.js";
@@ -98,7 +97,7 @@
 // console.log(AndroidCharge.charging()); // Заряжаем андройд зарядкой для айфона через адаптер;
 
 // ABSTRACT FACTORY////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Абстрактная фабрика некая надстройка над фабриками, которая позволяет управлять этими фабриками и помогает создавать однотипные объекты но с разным данными 
+// Абстрактная фабрика некая надстройка над фабриками, которая позволяет управлять этими фабриками и помогает создавать однотипные объекты но с разным данными
 // import { AvtoVAZ } from "./src/abstractFactory/AvtoVAZ.js";
 // const LadaOffRoadFactory = AvtoVAZ.offRoadFactory(); // Создаем фабрику внедорожников с помощью абстрактной фабрики
 // console.log(LadaOffRoadFactory.makeChevyNiva()); // Создаем внедорожник
@@ -109,6 +108,15 @@
 // const LadaSportCarFactory = AvtoVAZ.sportCarFactory(); // Создаем фабрику спорткаров с помощью абстрактной фабрики
 // console.log(LadaSportCarFactory.makeLadaRevolution()); // Создаем спорткар
 
-
-
+// FACADE////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Фасад позволяет нам иметь единый интерфейс доступа к какому либо объекту, а так же позволяет из огромного множества методов
+// которые могут содержаться в данном объекте использовать только необходимые нам в контексте задачи
+// import { VolumeSettings } from "./src/facade/VolumeSettings.js";
+// import { SoundSettings } from "./src/facade/SoundSettings.js";
+// const soundSettings = new SoundSettings();
+// console.log(soundSettings); // Объект soundSettings может иметь огромное количество методов дя работы со звуком
+// const volumeSettings = new VolumeSettings();// Но с помощью фасада volumeSettings мы можем работать только с громкостью
+// console.log(volumeSettings.volumeMinus());
+// console.log(volumeSettings.volumePlus());
+// console.log(volumeSettings.volumeMute());
 

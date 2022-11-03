@@ -120,3 +120,22 @@
 // console.log(volumeSettings.volumePlus());
 // console.log(volumeSettings.volumeMute());
 
+// COMPOSITE////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Компоновщик полезен когда у нас в проекте есть некая древовидная структура
+// он делегирует вызовы методов конкретным узлам 
+// import { BigestMatryoshka } from "./src/composite/BigestMatryoshka.js";
+// import { MatryoshkaSize, MatryoshkaWeight } from "./src/composite/enums.js";
+// import { Matryoshka } from './src/composite/Matryoshka.js';
+// const compositeMatryoshka = new BigestMatryoshka();
+// console.log(compositeMatryoshka.getTotalWeight(), 'Вес самой крупной матрешки');
+// compositeMatryoshka.add(new Matryoshka(MatryoshkaWeight.S, MatryoshkaSize.S));
+// console.log(compositeMatryoshka.getTotalWeight(), 'Вес крупной матрешки с вложеной матрешкой S');
+// compositeMatryoshka.add(new Matryoshka(MatryoshkaWeight.M, MatryoshkaSize.M));
+// console.log(compositeMatryoshka.getTotalWeight(), 'Вес крупной матрешки с вложенными матрешками S и M');
+// compositeMatryoshka.add(new Matryoshka(MatryoshkaWeight.L, MatryoshkaSize.L));
+// console.log(compositeMatryoshka.getTotalWeight(), 'Вес крупной матрешки с вложенными матрешками S,M,L');
+// compositeMatryoshka.add(new Matryoshka(MatryoshkaWeight.XL, MatryoshkaSize.XL));
+// console.log(compositeMatryoshka.getTotalWeight(), 'Вес крупной матрешки с вложенными матрешками S,M,L,XL');
+
+
+

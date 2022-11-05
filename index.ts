@@ -137,5 +137,26 @@
 // compositeMatryoshka.add(new Matryoshka(MatryoshkaWeight.XL, MatryoshkaSize.XL));
 // console.log(compositeMatryoshka.getTotalWeight(), 'Вес крупной матрешки с вложенными матрешками S,M,L,XL');
 
+// PROXY////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Прокси помогает когда нам нужен некий дополнительны слой.
+// Прокси может перехватывать какие либо запросы и выполнять работу вместо основного класса,
+// а затем возвращать какие либо преобразованнные им данные, либо делегировать работу основному классу.
+// Существует много различных видов прокси: Защищающие, логирующие, кэширующие
+// Каждый из этих видов сужит для определенных целей
+// import { CEO } from "./src/proxy/CEO.js";
+// import { CEOProxy } from "./src/proxy/CEOProxy.js";
+// import { Company } from "./src/proxy/Company.js";
+// const Ceo = new CEO(Company.getCompany()); // Инициализиурем директора
+// const CeoProxy = new CEOProxy(Company.getCompany(), Ceo); // Инициализируем заместителя директора
+// CeoProxy.makeDeal('Продажа активов twitterу'); // Пока директор занят делаем сделку от имени его зама
+// Ceo.busy = false; // Директор освободился и может делать сделки сам
+// CeoProxy.makeDeal('Покупка нового здания под офис'); // Делаем сделку от имени директора
+// Ceo.busy = true; // Директор снова занят и все последующие сделки выполняет его зам или прокси
+// CeoProxy.makeDeal('Продажа служебного авто');
+// CeoProxy.makeDeal('Прокупка утюга');
+// CeoProxy.donation();
+// CeoProxy.donation();
+// console.log(Company.deals);
+
 
 

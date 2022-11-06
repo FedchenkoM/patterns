@@ -158,5 +158,17 @@
 // CeoProxy.donation();
 // console.log(Company.deals);
 
+// BRIDGE////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Мост позволяет использовать композицию вместо наследования, тем самым предотвращая рост иерархии классов. 
+// import { Juice } from "./src/bridge/Juice.js";
+// import { Fruits } from './src/bridge/enums.js';
+// import { FruitJuice } from './src/bridge/FruitJuice.js';
+// const appleJuice = new Juice(new FruitJuice(Fruits.apple));
+// const orangeJuice = new Juice(new FruitJuice(Fruits.orange));
+// appleJuice.squeeze();
+// orangeJuice.squeeze();
+
+
+
 
 

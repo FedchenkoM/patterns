@@ -14,6 +14,7 @@
 // BritishPlayer.speak();
 // BritishPlayer.trainByProgram();
 
+
 // SINGLETON////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Синглтон необходим тогда, когда в нашем коде есть необходимость создать что-то в единичном экземпляре
 // import { Sun } from "./src/singleton/Sun.js";
@@ -167,6 +168,21 @@
 // const orangeJuice = new Juice(new FruitJuice(Fruits.orange));
 // appleJuice.squeeze();
 // orangeJuice.squeeze();
+//////////////////////////////////////////
+
+// FLYTWEIGHT////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Легковес позволяет хранить общее состояние многих обьектов в одном обьекте(контексте)
+// import { AutoFactory } from "./src/flyweight/autoFactory.js";
+// const Factory = new AutoFactory();
+// console.log(Factory.create('Kia'));
+// console.log(Factory.create('BMW'));
+// console.log(Factory.create('BMW'));
+// console.log(Factory.create('Toyota'));
+// console.log(Factory.create('Toyota'));
+// console.log(Factory.getModels());
+//////////////////////////////////////////////////////////////////////////////
+
+
 
 
 
